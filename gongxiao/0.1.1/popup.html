@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style type="text/css">
+      body {
+        margin: 10px;
+        white-space: nowrap;
+      }
+
+      h1 {
+        font-size: 15px;
+      }
+
+      #container {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .gx-chx-btn{
+          color:#fff;
+          display:inline-block;
+          width:60px;
+          height:30px;
+          line-height:30px;
+          text-align:center;
+          border-radius:3px;
+          cursor:pointer;
+      }
+      .gx-chx-run{
+          background:#3838e2;
+      }
+      .gx-chx-run:hover{
+          background:#1212e4;
+      }
+      .gx-chx-stop{
+          background:#ccc;
+      }
+      .gx-chx-stop:hover{
+          background:#999;
+      }
+    </style>
+    <script src="content.js"></script>
+  </head>
+
+  <body>
+    <h1></h1>
+    <div style="padding:10px;">
+      <p>
+          <span id="J_run" class="gx-chx-btn gx-chx-run">run</span>
+          <span id="J_stop" class="gx-chx-btn gx-chx-stop">stop</span>
+      </p>
+      <div>
+          <span>every </span>
+          <input style="line-height:30px;height:30px;width:50px;" type="text" value="10"/>
+          <span> mins</span>
+      </div>
+
+    </div>
+  </body>
+</html>

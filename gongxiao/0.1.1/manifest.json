@@ -1,0 +1,34 @@
+{
+    "name": "Gongxiao",
+    "description": "供销系统专用获取列表数据Chrome插件",
+    "version": "0.1",
+    "browser_action": {
+        "default_icon": "images/icon.png",
+        "default_title": "供销系统专用获取列表数据",
+        "default_popup": "popup.html"
+    },
+    "background":
+	{
+		"page": "background.html"
+	},
+    // 需要直接注入页面的JS
+
+	"permissions":
+	[
+		"contextMenus",
+		"tabs",
+		"notifications",
+		"webRequest",
+		"webRequestBlocking",
+		"storage",
+		"http://abc.cn/", 
+	],
+	"web_accessible_resources":["js/inject.js"],
+	"options_ui":
+	{
+		"page": "options.html",
+		"chrome_style": true
+	},
+	"devtools_page": "devtools.html",
+    "manifest_version": 2
+}
